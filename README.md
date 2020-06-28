@@ -1,4 +1,4 @@
-## Anisible Rolling udpates using include_tasks## 
+## Anisible Rolling udpates using include_tasks
 This repo is a playbook for installing webserver using rolling updates and include_tasks.
 
 1. Rolling updates
