@@ -9,7 +9,7 @@ Scenario: Lets say You are updating a cluster of webservers. The way ansible exe
 ---
 - name: rolling updates
   hosts: all
-  **serial: 2**
+  serial: 2
   tasks:
     - name:
       yum: 
