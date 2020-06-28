@@ -20,3 +20,5 @@ Scenario: Lets say You are updating a cluster of webservers. The way ansible exe
 Include tasks is a way to distribute each task in seperate playbook files. One important aspect of **include_tasks** is that it is very memory friendly. The main playbook calls the children playbooks **one by one** therefore all playbooks are not loaded at the same time. It **dynamically** allocates the memory on the control nodes as and when they are called (as opposed to *import_tasks*)
 
 
+# Main file
+include_web.yml is the main playbook to call other playbooks
