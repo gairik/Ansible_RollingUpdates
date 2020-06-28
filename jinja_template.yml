@@ -1,0 +1,7 @@
+---
+- name:
+  template:
+    src: ./index.j2
+    dest: /var/www/html/index.html
+  notify: run_service
+

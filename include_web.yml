@@ -1,0 +1,18 @@
+---
+- name:
+  hosts: all
+  serial: 2 
+  tasks:
+    - name:
+      include_tasks: apach.yml
+    - name:
+      include_tasks: jinja_template.yml
+    - name:
+      include_tasks: service.yml
+    - name:
+      include_tasks: firewall.yml
+  handlers:
+    - name: run_service
+      service:
+        name: httpd
+        state: restarted
